@@ -1,6 +1,6 @@
 context:
   name: netcdf
-  version: "1.0.19"
+  version: "1.0.20"
 
 package:
   name: octave-${{ name }}
@@ -8,11 +8,11 @@ package:
 
 source:
   url: https://github.com/gnu-octave/octave-netcdf/releases/download/v${{ version }}/netcdf-${{ version }}.tar.gz
-  sha256: 799717e30630caacaf3a079026a5d808022423a543fd2d20e00daa8e341c0acc
+  sha256: ab54b69ceb2b38fff12dd74ff3b33b819428b5c7896e28aebb0216594a032d49
   target_directory: ${{ name }}
 
 build:
-  number: 1
+  number: 0
   skip:
     - if: win or osx
       then: true
